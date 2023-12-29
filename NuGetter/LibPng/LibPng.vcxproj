@@ -270,6 +270,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\NuGetter\BuildLocalNuget.bat" />
     <None Include="..\NuGetter\LibPng-Tekla.nuspec" />
     <None Include="..\NuGetter\LibPng-Tekla.redist.nuspec" />
     <None Include="..\NuGetter\LibPng-Tekla.redist.targets" />

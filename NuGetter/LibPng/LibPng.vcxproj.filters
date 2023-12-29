@@ -118,5 +118,8 @@
     <None Include="..\NuGetter\LibPng-Tekla.Static.targets">
       <Filter>NuGetter</Filter>
     </None>
+    <None Include="..\NuGetter\BuildLocalNuget.bat">
+      <Filter>NuGetter</Filter>
+    </None>
   </ItemGroup>
 </Project>

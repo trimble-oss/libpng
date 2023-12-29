@@ -3,9 +3,9 @@
   <metadata>
     <id>LibPng-Tekla.redist</id>
     <version>0.0.0-localbuild</version>
-    <authors>Trimble Solutions Technology, Glenn Randers-Pehrson</authors>
+    <authors>Glenn Randers-Pehrson, Trimble Technology</authors>
     <licenseUrl>http://www.libpng.org/pub/png/libpng.html</licenseUrl>
-    <projectUrl>http://www.libpng.org/pub/png/libpng.html</projectUrl>
+    <projectUrl>https://github.com/trimble-oss/libpng</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Redistributable components for package 'LibPng-Tekla'.</description>
     <title>LibPng (Tekla build) Redist</title>
@@ -14,11 +14,11 @@
   <files>
     <file src="LibPng-Tekla.redist.targets" target="\build\native\" />
 
-    <file src="..\x64\140-Release\LibPng-*.dll" target="\build\native\bin\x64\v140\" />
-    <file src="..\x64\142-Release\LibPng-*.dll" target="\build\native\bin\x64\v142\" />
+    <file src="..\Build\x64\140-Release\LibPng-*.dll" target="\build\native\bin\x64\v140\" />
+    <file src="..\Build\x64\142-Release\LibPng-*.dll" target="\build\native\bin\x64\v142\" />
 
-    <file src="..\x64\140-DebugCRT\LibPng-*.dll" target="\build\native\bin\x64\v140\DebugCRT\" />
-    <file src="..\x64\142-DebugCRT\LibPng-*.dll" target="\build\native\bin\x64\v142\DebugCRT\" />
+    <file src="..\Build\x64\140-DebugCRT\LibPng-*.dll" target="\build\native\bin\x64\v140\DebugCRT\" />
+    <file src="..\Build\x64\142-DebugCRT\LibPng-*.dll" target="\build\native\bin\x64\v142\DebugCRT\" />
 
     <file src="managed\LibPng-Tekla.redist.props" target="\build\net\" />
     <file src="managed\LibPng-Tekla.redist.targets" target="\build\net\" />
