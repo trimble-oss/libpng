@@ -27,25 +27,24 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\LibPng\png.c" />
-    <ClCompile Include="..\LibPng\pngerror.c" />
-    <ClCompile Include="..\LibPng\pngget.c" />
-    <ClCompile Include="..\LibPng\pngmem.c" />
-    <ClCompile Include="..\LibPng\pngpread.c" />
-    <ClCompile Include="..\LibPng\pngread.c" />
-    <ClCompile Include="..\LibPng\pngrio.c" />
-    <ClCompile Include="..\LibPng\pngrtran.c" />
-    <ClCompile Include="..\LibPng\pngrutil.c" />
-    <ClCompile Include="..\LibPng\pngset.c" />
-    <ClCompile Include="..\LibPng\pngtest.c" />
-    <ClCompile Include="..\LibPng\pngtrans.c" />
-    <ClCompile Include="..\LibPng\pngwio.c" />
-    <ClCompile Include="..\LibPng\pngwrite.c" />
-    <ClCompile Include="..\LibPng\pngwtran.c" />
-    <ClCompile Include="..\LibPng\pngwutil.c" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ClCompile Include="..\..\png.c" />
+    <ClCompile Include="..\..\pngerror.c" />
+    <ClCompile Include="..\..\pngget.c" />
+    <ClCompile Include="..\..\pngmem.c" />
+    <ClCompile Include="..\..\pngpread.c" />
+    <ClCompile Include="..\..\pngread.c" />
+    <ClCompile Include="..\..\pngrio.c" />
+    <ClCompile Include="..\..\pngrtran.c" />
+    <ClCompile Include="..\..\pngrutil.c" />
+    <ClCompile Include="..\..\pngset.c" />
+    <ClCompile Include="..\..\pngtrans.c" />
+    <ClCompile Include="..\..\pngwio.c" />
+    <ClCompile Include="..\..\pngwrite.c" />
+    <ClCompile Include="..\..\pngwtran.c" />
+    <ClCompile Include="..\..\pngwutil.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -155,7 +154,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\libpng\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibPng</AdditionalIncludeDirectories>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
     </ClCompile>
     <Link>
@@ -172,7 +171,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\libpng\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibPng</AdditionalIncludeDirectories>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
     </ClCompile>
     <Link>
@@ -191,7 +190,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\libpng\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibPng</AdditionalIncludeDirectories>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
     </ClCompile>
     <Link>
@@ -212,7 +211,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\libpng\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibPng</AdditionalIncludeDirectories>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
     </ClCompile>
     <Link>
@@ -233,7 +232,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\libpng\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibPng</AdditionalIncludeDirectories>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
     </ClCompile>
     <Link>
@@ -254,7 +253,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\libpng\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibPng</AdditionalIncludeDirectories>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
     </ClCompile>
     <Link>

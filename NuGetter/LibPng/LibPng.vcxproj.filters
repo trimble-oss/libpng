@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Include">
-      <UniqueIdentifier>{6be3e359-eb9f-4dd2-8369-64378666bcef}</UniqueIdentifier>
-    </Filter>
     <Filter Include="NuGetter">
       <UniqueIdentifier>{f9be67c4-3787-4514-9072-79d81a1338b4}</UniqueIdentifier>
     </Filter>
@@ -33,6 +30,9 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="pnglibconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -41,98 +41,51 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="png.c">
+    <ClCompile Include="..\..\png.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngerror.c">
+    <ClCompile Include="..\..\pngerror.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngget.c">
+    <ClCompile Include="..\..\pngget.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngmem.c">
+    <ClCompile Include="..\..\pngmem.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngpread.c">
+    <ClCompile Include="..\..\pngpread.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngread.c">
+    <ClCompile Include="..\..\pngread.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngrio.c">
+    <ClCompile Include="..\..\pngrio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngrtran.c">
+    <ClCompile Include="..\..\pngrtran.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngrutil.c">
+    <ClCompile Include="..\..\pngrutil.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngset.c">
+    <ClCompile Include="..\..\pngset.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngtest.c">
+    <ClCompile Include="..\..\pngtrans.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngtrans.c">
+    <ClCompile Include="..\..\pngwio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngwio.c">
+    <ClCompile Include="..\..\pngwrite.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngwrite.c">
+    <ClCompile Include="..\..\pngwtran.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngwtran.c">
+    <ClCompile Include="..\..\pngwutil.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pngwutil.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\NuGetter\LibPng-Tekla.nuspec">
-      <Filter>NuGetter</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\NuGetter\LibPng-Tekla.redist.nuspec">
-      <Filter>NuGetter</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\NuGetter\LibPng-Tekla.redist.targets">
-      <Filter>NuGetter</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\NuGetter\LibPng-Tekla.targets">
-      <Filter>NuGetter</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\NuGetter\MultiPackagesInfo.xml">
-      <Filter>NuGetter</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Include\png.h">
-      <Filter>Include</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Include\pngconf.h">
-      <Filter>Include</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Include\pngdebug.h">
-      <Filter>Include</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Include\pnginfo.h">
-      <Filter>Include</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Include\pnglibconf.h">
-      <Filter>Include</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Include\pngpriv.h">
-      <Filter>Include</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Include\pngstruct.h">
-      <Filter>Include</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\NuGetter\managed\LibPng-Tekla.redist.props">
-      <Filter>NuGetter\managed</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\NuGetter\managed\LibPng-Tekla.redist.targets">
-      <Filter>NuGetter\managed</Filter>
-    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LibPng.rc">
@@ -141,6 +94,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="..\NuGetter\managed\LibPng-Tekla.redist.props">
+      <Filter>NuGetter\managed</Filter>
+    </None>
+    <None Include="..\NuGetter\managed\LibPng-Tekla.redist.targets">
+      <Filter>NuGetter\managed</Filter>
+    </None>
+    <None Include="..\NuGetter\LibPng-Tekla.nuspec">
+      <Filter>NuGetter</Filter>
+    </None>
+    <None Include="..\NuGetter\LibPng-Tekla.redist.nuspec">
+      <Filter>NuGetter</Filter>
+    </None>
+    <None Include="..\NuGetter\LibPng-Tekla.redist.targets">
+      <Filter>NuGetter</Filter>
+    </None>
+    <None Include="..\NuGetter\LibPng-Tekla.targets">
+      <Filter>NuGetter</Filter>
+    </None>
     <None Include="..\NuGetter\LibPng-Tekla.Static.nuspec">
       <Filter>NuGetter</Filter>
     </None>
