@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NuGetterPackages>
+  <NuGetterPackage name="dlls">
+    <NuSpecFilePath>NuGetter\LibPng-Tekla.redist.nuspec</NuSpecFilePath>
+  </NuGetterPackage>
+  <NuGetterPackage name="libs">
+    <NuSpecFilePath>NuGetter\LibPng-Tekla.nuspec</NuSpecFilePath>
+  </NuGetterPackage>
+</NuGetterPackages>
