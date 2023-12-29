@@ -138,7 +138,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LIBPNG_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibPng</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -155,7 +155,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;LIBPNG_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibPng</AdditionalIncludeDirectories>
       <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
@@ -172,7 +172,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LIBPNG_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibPng</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -189,7 +189,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;LIBPNG_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibPng</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -207,7 +207,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;LIBPNG_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibPng</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -227,7 +227,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;LIBPNG_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibPng</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -238,273 +238,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="Include\png.h">
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\Include"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy include file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\Include\%(Filename)%(Extension)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Outputs>
-    </CustomBuild>
-    <CustomBuild Include="Include\pngconf.h">
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\Include"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy include file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\Include\%(Filename)%(Extension)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Outputs>
-    </CustomBuild>
-    <CustomBuild Include="Include\pngdebug.h">
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\Include"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy include file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\Include\%(Filename)%(Extension)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Outputs>
-    </CustomBuild>
-    <CustomBuild Include="Include\pnginfo.h">
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\Include"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy include file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\Include\%(Filename)%(Extension)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Outputs>
-    </CustomBuild>
-    <CustomBuild Include="Include\pnglibconf.h">
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\Include"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy include file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\Include\%(Filename)%(Extension)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Outputs>
-    </CustomBuild>
-    <CustomBuild Include="Include\pngpriv.h">
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\Include"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy include file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\Include\%(Filename)%(Extension)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Outputs>
-    </CustomBuild>
-    <CustomBuild Include="Include\pngstruct.h">
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-DebugCRT|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\Include"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy include file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\Include\%(Filename)%(Extension)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='142-Release|x64'">
-      </Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">
-      </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">
-      </Outputs>
-    </CustomBuild>
+    <ClInclude Include="pnglibconf.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\png.c" />
+    <ClCompile Include="..\..\pngerror.c" />
+    <ClCompile Include="..\..\pngget.c" />
+    <ClCompile Include="..\..\pngmem.c" />
+    <ClCompile Include="..\..\pngpread.c" />
+    <ClCompile Include="..\..\pngread.c" />
+    <ClCompile Include="..\..\pngrio.c" />
+    <ClCompile Include="..\..\pngrtran.c" />
+    <ClCompile Include="..\..\pngrutil.c" />
+    <ClCompile Include="..\..\pngset.c" />
+    <ClCompile Include="..\..\pngtrans.c" />
+    <ClCompile Include="..\..\pngwio.c" />
+    <ClCompile Include="..\..\pngwrite.c" />
+    <ClCompile Include="..\..\pngwtran.c" />
+    <ClCompile Include="..\..\pngwutil.c" />
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="png.c" />
-    <ClCompile Include="pngerror.c" />
-    <ClCompile Include="pngget.c" />
-    <ClCompile Include="pngmem.c" />
-    <ClCompile Include="pngpread.c" />
-    <ClCompile Include="pngread.c" />
-    <ClCompile Include="pngrio.c" />
-    <ClCompile Include="pngrtran.c" />
-    <ClCompile Include="pngrutil.c" />
-    <ClCompile Include="pngset.c" />
-    <ClCompile Include="pngtest.c" />
-    <ClCompile Include="pngtrans.c" />
-    <ClCompile Include="pngwio.c" />
-    <ClCompile Include="pngwrite.c" />
-    <ClCompile Include="pngwtran.c" />
-    <ClCompile Include="pngwutil.c" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='140-Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='140-DebugCRT|x64'">Create</PrecompiledHeader>
@@ -515,68 +270,19 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\NuGetter\LibPng-Tekla.nuspec">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\NuGetter\"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy nugetter file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\NuGetter\%(Filename)%(Extension)</Outputs>
-      <SubType>Designer</SubType>
-    </CustomBuild>
-    <CustomBuild Include="..\NuGetter\LibPng-Tekla.redist.nuspec">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\NuGetter\"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy nugetter file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\NuGetter\%(Filename)%(Extension)</Outputs>
-    </CustomBuild>
-    <CustomBuild Include="..\NuGetter\LibPng-Tekla.redist.targets">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\NuGetter\"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy nugetter file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\NuGetter\%(Filename)%(Extension)</Outputs>
-      <SubType>Designer</SubType>
-    </CustomBuild>
-    <CustomBuild Include="..\NuGetter\LibPng-Tekla.targets">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\NuGetter\"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy nugetter file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\NuGetter\%(Filename)%(Extension)</Outputs>
-    </CustomBuild>
-    <CustomBuild Include="..\NuGetter\managed\LibPng-Tekla.redist.props">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\NuGetter\managed\"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy nugetter file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\NuGetter\managed\%(Filename)%(Extension)</Outputs>
-    </CustomBuild>
-    <CustomBuild Include="..\NuGetter\managed\LibPng-Tekla.redist.targets">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\NuGetter\managed\"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy nugetter file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\NuGetter\managed\%(Filename)%(Extension)</Outputs>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\NuGetter\MultiPackagesInfo.xml">
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\NuGetter\"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy nugetter file</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\NuGetter\%(Filename)%(Extension)</Outputs>
-    </CustomBuild>
+    <None Include="..\NuGetter\LibPng-Tekla.nuspec" />
+    <None Include="..\NuGetter\LibPng-Tekla.redist.nuspec" />
+    <None Include="..\NuGetter\LibPng-Tekla.redist.targets" />
+    <None Include="..\NuGetter\LibPng-Tekla.targets" />
+    <None Include="..\NuGetter\LibPng-Tekla.Static.nuspec" />
+    <None Include="..\NuGetter\LibPng-Tekla.Static.targets" />
+    <None Include="..\NuGetter\managed\LibPng-Tekla.redist.props" />
+    <None Include="..\NuGetter\managed\LibPng-Tekla.redist.targets" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LibPng.rc" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\NuGetter\LibPng-Tekla.Static.nuspec">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\NuGetter\"</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\NuGetter\%(Filename)%(Extension)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy nugetter file</Message>
-    </CustomBuild>
-    <CustomBuild Include="..\NuGetter\LibPng-Tekla.Static.targets">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">xcopy.exe /D /Y "%(FullPath)" "$(TargetDir)..\..\NuGetter\"</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">$(TargetDir)..\..\NuGetter\%(Filename)%(Extension)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='140-Release|x64'">Copy nugetter file</Message>
-    </CustomBuild>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
