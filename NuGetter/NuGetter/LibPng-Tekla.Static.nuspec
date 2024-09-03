@@ -7,7 +7,7 @@
     <licenseUrl>http://www.libpng.org/pub/png/libpng.html</licenseUrl>
     <projectUrl>https://github.com/trimble-oss/libpng</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>The native libpng static library (x64, v140/v141->v140/v142, Release/DebugCRT).</description>
+    <description>The native libpng static library (x64, v140/v141->v140/v142/v143->v142, Release/DebugCRT).</description>
     <title>LibPng (Tekla build)</title>
     <tags>LibPng  native  nativepackage</tags>
   </metadata>
