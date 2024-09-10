@@ -63,5 +63,8 @@
     <ClCompile Include="..\..\pngwutil.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\pnggccrd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

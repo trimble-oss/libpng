@@ -15,7 +15,6 @@
     <file src="LibPng-Tekla.Static.targets" target="\build\native\" />
 
     <file src="..\..\*.h" target="\build\native\include\" />
-    <file src="..\LibPng\pnglibconf.h" target="\build\native\include\" />
 
     <file src="..\Build\x64\140-Release\LibPng.Static.lib" target="\build\native\lib\x64\v140\" />
     <file src="..\Build\x64\142-Release\LibPng.Static.lib" target="\build\native\lib\x64\v142\" />
