@@ -17,3 +17,6 @@ MSBuild.exe .. /p:Configuration=142-Release /p:Platform=x64 /p:MajorVersion=%Maj
 c:\work\nuget.exe pack -Version %Major%.%Minor%.%Patch%.%Build% LibPng-Tekla.nuspec
 c:\work\nuget.exe pack -Version %Major%.%Minor%.%Patch%.%Build% LibPng-Tekla.redist.nuspec
 c:\work\nuget.exe pack -Version %Major%.%Minor%.%Patch%.%Build% LibPng-Tekla.Static.nuspec
+
+echo - Sign TS used Nugets by downloading and running signing script from Artifactory
+echo - Upload signed Nugets to Artifactory/Technology feed
